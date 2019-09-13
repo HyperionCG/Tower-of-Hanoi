@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#rodContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 350px;
+    border: black 2px solid;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+
+}
+
+#buttonContainer span {
+    margin: auto;
+    position: relative;
+    bottom: 55px;
+}
+
+button {
+    height: 50px;
+    width: 100px;
+    outline: none;
+}
+
+
+.rods {
+    width: 15px;
+    height: 65%;
+    background: black;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.disks {
+    border-radius:  7px;
+    border: black 2px solid;
+}
+
+.disks:active {
+    border: grey 2px solid;
+}
+
+#diskXL {
+    height: 28px;
+    width: 200px;
+    background-color: green;
+}
+
+#diskLarge {
+    height: 27px;
+    width: 150px;
+    background-color: blue;
+}
+
+
+#diskMedium {
+    height: 26px;
+    width: 100px;
+    background-color: red;
+}
+
+#diskSmall {
+    height: 25px;
+    width: 50px;
+    background-color: yellow;
+}
+
+.buttonsPickup {
+    background: greenyellow;
+}
+
+.buttonsDrop {
+    background: red;
+}

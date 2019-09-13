@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Tower of Hanoi</title>
+</head>
+<body>
+    <header>
+        <h1>Tower of Hanoi</h1>
+    </header>
+    <div>  
+        <ol>
+            <li>Only one disk can be moved at a time.</li>
+            <li>Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack.</li>
+            <li>No disk may be placed on top of a smaller disk.</li>
+        </ol>
+    </div>
+
+    <div id="rodContainer">
+        <div class="rods" id="rodOne" onclick="selectedRod()">
+            <span class="disks" id="diskXL"></span>
+            <span class="disks" id="diskLarge"></span>
+            <span class="disks" id="diskMedium"></span>
+            <span class="disks" id="diskSmall"></span>
+        </div>
+        <div class="rods" id="rodTwo" onclick="selectedRod()">
+
+        </div>
+        <div class="rods" id="rodThree" onclick="selectedRod()">
+
+        </div>
+    </div>
+    <div id="buttonContainer">
+            <span id="buttonStart">
+                <button class="buttonsPickup" onclick="pickUpDiskStart()">Pickup</button>
+                <button class="buttonsDrop" onclick="dropDiskStart()">Drop</button>
+            </span>
+            <span id="buttonOffset">
+                    <button class="buttonsPickup" onclick="pickUpDiskOffset()">Pickup</button>
+                    <button class="buttonsDrop" onclick="dropDiskOffset()">Drop</button>
+            </span>
+            <span id="buttonEnd">
+                    <button class="buttonsPickup" onclick="pickUpDiskEnd()">Pickup</button>
+                    <button class="buttonsDrop" onclick="dropDiskEnd()">Drop</button>
+            </span>
+    </div>
+    <div id="buttonReset">
+    <button id="reset" onclick="reset()">RESET</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
